@@ -1,8 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { ReleveurService } from '../../releveurs/releveur.service';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 import { AppComponent } from './app.component';
+import { HttpModule } from '@angular/http';
 
 
 @NgModule({
@@ -10,9 +15,11 @@ import { AppComponent } from './app.component';
     AppComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule, FormsModule, HttpModule, HttpClientModule, ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ReleveurService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { 
+ 
+}

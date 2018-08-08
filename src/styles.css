@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+.part1{
+    width: 20%;
+    height: auto;
+    margin-right:30px;
+    margin-left: 20px;
+}
+#disp{   display: inline-block;
+    vertical-align: top;
+}
+.part2{
+    width:75%;
+    height: auto;
+    margin-left: 10px;
+}
+.principal{display:inline-block; vertical-align: middle;}
